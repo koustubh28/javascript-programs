@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript">
+			let array = [10,50,8,100,30];
+			let length = array.length;
+
+			let max = array[0];
+			let min = array[0];
+
+			for(var i=1; i<length; i++) {
+
+				if (array[i] > max) {
+					max = array[i];
+				} else if (min > array[i]) {
+					min = array[i];
+				}
+			}
+
+
+			console.log("Largest and Smallest element in an array is: " + max + ' and ' + min);
+
+		</script>
+	</body>
+</html>

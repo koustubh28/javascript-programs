@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+	</head>
+	<body>
+		<script type="text/javascript">
+
+			var number, remainder, storeValue = 0;
+
+			function isThisPerfectNumber(number) {
+
+				for(var i=1; i<number; i++) {
+					remainder = number % i;
+					if (remainder == 0) {
+						storeValue = storeValue + i;
+					}
+				}
+
+				if (storeValue == number) {
+					return number + " is a perfect number";
+				} else {
+					return 0;
+				}
+			}
+
+			var num = isThisPerfectNumber(28);
+			console.log(num);
+
+		</script>
+	</body>
+</html>

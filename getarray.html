@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset='utf-8'>
+	</head>
+	<body>
+		<script type="text/javascript">
+			var getNewArray = function(array, n) {
+				for(var i=0; i<array.length; i++) {
+					var newArray = array.slice(0,n);
+					return newArray;
+				}
+			}
+
+			console.log(getNewArray([5,2,6,7], 3));
+			console.log(getNewArray([5,2,6,7], 2));
+
+		</script>
+	</body>
+</html>
