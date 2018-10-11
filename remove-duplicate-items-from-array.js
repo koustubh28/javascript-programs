@@ -1,14 +1,15 @@
 function removeDuplicates(num) {
-  var x,
+  var i,
       len=num.length,
       out=[],
       obj={};
 
-  for (x=0; x<len; x++) {
-    obj[num[x]]=0;
+  for (i=0; i<len; i++) {
+    obj[num[i]]=0;
+    console.log(obj);
   }
-  for (x in obj) {
-    out.push(x);
+  for (i in obj) {
+    out.push(i);
   }
   return out;
 }

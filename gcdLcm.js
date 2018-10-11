@@ -1,10 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset='utf-8'>
-	</head>
-	<body>
-		<script type="text/javascript">
 
 			let number1, number2, gcd, lcm, remainder, numerator, denominator;
 
@@ -35,7 +28,3 @@
 			calculateGcdLcm(8, 12);
 
 			calculateGcdLcm(18, 16);
-
-		</script>
-	</body>
-</html>
