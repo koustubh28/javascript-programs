@@ -5,7 +5,7 @@ function rev_num() {
     rem = n % 10;
     rev = rev * 10 + rem;
     n = Math.floor(n/10);
-  }
+  } 
   console.log("Reverse of a number is " + rev);
 }
 
