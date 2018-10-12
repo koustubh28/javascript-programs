@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang ="en">
+   <head>
+      <meta charset="utf-8">
+   </head>
+   <body onload="fibonacciSeries()">
+     <div id="print-series"></div>
+
+      <script type="text/javascript">
+         function fibonacciSeries(firstNum, secondNum) {
+           var inputFirstNumber = parseInt(prompt("Enter the first number"));
+           var inputSecondNumber = parseInt(prompt("Enter the second number"));
+           var thirdNumber;
+
+           var numOfSeries = parseInt(prompt("Enter the length you want to display series"));
+
+           document.write("First number is: " +inputFirstNumber + "<br>");
+           document.write("Second number is: " +inputSecondNumber + "<br>");
+
+           document.write("------ * The series is * ------");
+
+           for(var i=inputFirstNumber; i<=numOfSeries; i++) {
+             thirdNumber = inputFirstNumber + inputSecondNumber;
+             inputFirstNumber = inputSecondNumber;
+             inputSecondNumber = thirdNumber;
+
+             document.write("<br>");
+             document.write(thirdNumber + '&nbsp;');
+           }
+        }
+      </script>
+   </body>
+</html>
