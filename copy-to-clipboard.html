@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">       
+    </head>
+    <body>
+        <h2 class="text-center text-primary">Copy to Clipboard</h2>
+        <div class="container" style="padding: 14px;">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <input type="text" class="form-control" id="myInp"><br>
+                        <button id="btnCopy" class="btn btn-default">Copy</button>                    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script type="text/javascript">
+            const myInp = document.getElementById('myInp');
+            const btnCopy = document.getElementById('btnCopy');
+
+            btnCopy.onclick = function() {
+                //Select the text
+                myInp.select();
+
+                //Copying the text
+                document.execCommand('Copy');
+            }
+        </script>
+    </body>
+</html>

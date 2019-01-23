@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">       
+    </head>
+    <body>
+        <div class="container" style="padding: 15px;">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="form-group">
+                        <select class="form-control" id="food-menu">
+                            <option value="0">---Select any Burger----</option>
+                            <option value="veg burger">Veg Burger</option>
+                            <option value="cheese burger">Cheese Burger</option>
+                            <option value="panner tikka burger">Paneer Tikka Burger</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+            <div class="row show-this" style="display:none;">
+                <div class="col-xs-12">
+                    <select>
+                        <option>Medium Price - Rs.50</option>
+                        <option>High Price - Rs.150</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                var pricedBox = $(".show-this");
+                $("#food-menu").on('change', function() {
+                    var menuValue = $("#food-menu").val();
+                    if (menuValue == 0) {
+                        pricedBox.hide();
+                    } else {
+                        pricedBox.show();
+                    }
+                });
+            });
+        </script>
+    </body>
+</html>
