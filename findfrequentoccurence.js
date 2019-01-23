@@ -1,4 +1,4 @@
-	var films = ["Stree","Nun","Stree","Gold","Stree","Satyamev Jayate"];
+	var dairy = ["Cheese","Butter","Cookies","Kitkat","Butter","Cheese"];
 	var counts = {};
 	var compare = 0;
 	var mostFrequent;
@@ -23,4 +23,4 @@
 			console.log(mostFrequent+ " occurs " +compare + " times");
 			return mostFrequent;
 
-		})(films);
+		})(dairy);

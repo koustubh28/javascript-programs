@@ -7,8 +7,8 @@
 
 					chr = chr + " * " ;
 				}
+			}
 
 				console.log(chr);
 				chr = '';
-			}
 		</script>
