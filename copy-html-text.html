@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script> 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+        <style>
+            .wrapper {
+                width: 500px;
+                height: 500px;
+                background:#f44335;
+                border-radius: 2px;
+            }
+        </style>       
+    </head>
+    <body>
+        <div class="wrapper" style="padding: 15px;">
+            <h1>Text you want to copy</h1>
+            <button>Copy</button>
+        </div>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('button').on('click', function() {
+                    var text = $('h1').html();
+                    var textElement = $('<input>').val(text).appendTo('body').select();
+                    document.execCommand('copy');
+                });
+            });
+        </script>
+    </body>
+</html>
