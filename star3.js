@@ -1,6 +1,4 @@
-<html>
-<head>
-<script type="text/javascript">
+
 
   var i, j;
   //outer loop
@@ -14,8 +12,3 @@
      document.write('<br/>');
    }
 
-</script>
-</head>
-<body>
-</body>
-</html>

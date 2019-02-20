@@ -1,4 +1,4 @@
-	var dairy = ["Cheese","Butter","Cookies","Kitkat","Butter","Cheese"];
+	var dairy = ["Cheese","Butter","Cookies","Kitkat", "Cheese"];
 	var counts = {};
 	var compare = 0;
 	var mostFrequent;

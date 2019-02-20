@@ -1,4 +1,3 @@
-		<script type="text/javascript">
 			var x,y,chr;
 
 			for(x=1; x<=6; x++) {
@@ -11,4 +10,3 @@
 
 				console.log(chr);
 				chr = '';
-		</script>
